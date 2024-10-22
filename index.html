@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE SITE</title>
+    <style>
+
+        header {
+            background: whitesmoke;
+            color: purple;
+           padding:10px;
+            text-align: center;
+            font-family: verdana;
+            width :360 px;
+           
+        }
+        header h1{ 
+          font-family: sans-serif;
+          font-size: 60px;
+          font-style: bold;
+          color:deeppink ;
+          text-align:center;
+         
+        } 
+        .menu button{ 
+            width: 100 px;
+            position: relative;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            font-size: 100%;
+            background-image:url("picture.jpeg");
+            background-size: cover;
+       }
+       img{
+             width:300px;
+             height:300px; 
+             margin: auto;
+             display:block;
+             border-radius:500px ;
+       }
+        .container {
+            display: flex;
+            margin: 0 10px;
+       }
+        nav.sidebar {
+            background: blanchedalmond;
+            padding: 30px;
+            width: 354px;
+       }
+        nav.sidebar ul {
+            padding: 10px;
+            display:inline;
+            width: 360px;
+       }
+        nav.sidebar ul li {
+            margin: 0 10px;
+            display:inline;
+       }
+        nav.sidebar ul li a {
+            color: midnightblue ;
+            text-decoration: radial-gradient;
+            display: inline;
+       }
+        nav.sidebar ul li a:hover {
+            text-decoration: underline;
+       }
+        section h2{
+            color: gold;
+            text-align: center;
+       }
+        main {
+            flex: 1;
+            background:none ;
+            padding: 30px;
+            height:1000 px;
+            border-radius: 4px;
+            width: 354px;
+            color: deepskyblue;
+       }
+       div p{
+        justify-content: center;
+       }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: cornflowerblue;
+            color: black;
+            position: relative;
+            bottom: 0;
+            width:1500px;
+       }
+    </style>
+</head>
+<body> 
+    <div>
+        <button class= "menu-button" oneclick="toggleSidebar()"> ☰ MENU</button>
+    </div>
+    <div>
+        <img src="logo.jpeg"/>
+    </div>
+    <header>
+         <h1>🦄LOVE SITE</h1>
+         <h3>"Love is Universal , Love is Unconditional, Love About Sacrifices”</h3>
+    </header>
+    <main>
+    <section>
+    <div>
+         <h2>DOES LOVE EXIST IN DIFFERENT WAYS? </h2>
+         <p>In love it will definitly exist in various ways ,because it will never matter your gender identity but it will defintily through the feeling, emotions and conection toward each other! </p>
+    </div>
+    </section>
+    <section>
+    <div>
+          <h2> <br> LGBTQIA</h2>
+        <h4>
+        <ul>
+        <li>LESBIAN</li>
+            <sub> - A woman who is sexually or romantically attracted exclusively to other women; a gay woman.</sub>
+        <li>GAY</li>
+            <sub> - Sexually or romantically attracted to people of one's own sex (used especially of a man). </sub>
+        <li>BISEXUAL</li>
+            <sub>- Sexually or romantically attracted to both men and women, or to more than one sex or gender. </sub>
+        <li>TRANSGENDER</li>
+            <sub>- denoting or relating to a person whose gender identity does not correspond with the sex registered for them at birth. </sub>
+        <li>QUEER</li>
+            <sub>- An umbrella term of LGBTQIA .Denoting or relating to a sexual or gender identity that does not correspond to established ideas of sexuality and gender, especially heterosexual norms. </sub>
+        <li>INTERSEXUAL</li>
+            <sub>- Relating to or denoting a person or animal that has both male and female sex organs or other sexual characteristics; relating to intersex individuals. </sub>
+        <li>ASEXUAL</li>
+            <sub>- Experiencing no sexual feelings or desires; not feeling sexual attraction to anyone. </sub>
+        </ul>
+        </h4>
+    </div>
+    </section>
+    </main>
+    </div>
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    <div>
+        <p>Do you wanna part of this site?  Click <a href="#">Register</a></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Website</p>
+    </footer>
+    <script>
+   function toggleSidebar(){
+      var sidebar=document.getElementById("loveSidebar");
+    sidebar.classList.toggle("active");
+    }
+    </script>
+</body>
+</html>
